@@ -16,7 +16,7 @@
 
 ## Live Demo
 
-<a href="https://teekaytech.github.io/Todo-List" target="_blank">Calculator</a>
+<a href="https://react-calc-teekay.herokuapp.com/" target="_blank">Calculator</a>
 
 ## Getting Started
 
