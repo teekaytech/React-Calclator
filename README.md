@@ -62,7 +62,7 @@ Click on the live demo link and peruse the app.
 
 Contributions, issues and feature requests are welcome!
 
-Feel free to check the [issues page](issues/).
+Feel free to check the [issues page](https://github.com/teekaytech/React-Calclator/issues/).
 
 ## Show your support
 
