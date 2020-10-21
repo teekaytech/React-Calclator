@@ -1,68 +1,80 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# React Calculator App
 
-## Available Scripts
+> A calculator project built to understand the building blocks of React frontend framework.
 
-In the project directory, you can run:
+![Screenshot loading...]()
 
-### `yarn start`
+## Built With
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- CSS
+- npm
+- ES6
+- React
+- Node.js
+- React-DOM
+- React-Create-App
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## Live Demo
 
-### `yarn test`
+<a href="https://teekaytech.github.io/Todo-List" target="_blank">Calculator</a>
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Getting Started
 
-### `yarn build`
+To get a local copy up and running follow these simple example steps.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- On the project GitHub page, navigate to the main page of the repository [this page](https://github.com/teekaytech/Todo-List.git).
+- Under the repository name, locate and click on a green button named `Code`.
+- Copy the project URL as displayed.
+- If you're running Windows Operating System, open your command prompt. On Linux, Open your terminal.
+- Change the current working directory to the location where you want the cloned directory to be made. Leave as it is if the current location is where you want the project to be.
+- Type `git clone`, and then paste the URL you copied in Step 3.<br>
+  `$ git clone https://github.com/teekaytech/Todo-List.git` <em>Press Enter key</em><br>
+- Press Enter. Your local copy will be created.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+Please Note that you must have github installed on your PC, this can be done
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Prerequisites
 
-### `yarn eject`
+- [Git](https://gist.github.com/derhuerst/1b15ff4652a867391f03).
+- Web browser (Chrome/Firefox)
+- [Node](https://nodejs.org/en/)
+- [NPM](https://www.npmjs.com/get-npm)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Usage
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Click on the live demo link and peruse the app.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### Making Changes
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- `npm install` to install the dependencies and packages
+- `npm start` to test the app after changes were made
 
-## Learn More
+## Author
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+👤 **Taofeek Olalere**
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Github: [@teekaytech](https://github.com/teekaytech)
+- Twitter: [@ola_lere](https://twitter.com/ola_lere)
+- Linkedin: [olaleretaofeek](https://linkedin.com/in/olaleretaofeek)
+- Portfolio: [Olalere Taofeek](https://teekaytech.github.io/olaleretaofeek/)
 
-### Code Splitting
+## 🤝 Contributing
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+Contributions, issues and feature requests are welcome!
 
-### Analyzing the Bundle Size
+Feel free to check the [issues page](issues/).
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+## Show your support
 
-### Making a Progressive Web App
+Give a ⭐️ if you like this project!
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+## Acknowledgments
 
-### Advanced Configuration
+- [Microverse](https://.microverse.org/)
+- [create-react-app boilerplate from Facebook team](https://github.com/facebook/create-react-app)
+- [Create React App Buildpack](https://github.com/mars/create-react-app-buildpack)
+- [Big.js](https://github.com/MikeMcl/big.js/)
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+## 📝 License
 
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+This project is [MIT](lic.url) licensed.
