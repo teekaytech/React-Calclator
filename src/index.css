@@ -11,8 +11,8 @@ body {
 }
 
 .main,
-display,
-group {
+.display,
+.group {
   display: flex;
 }
 
