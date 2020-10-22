@@ -2,7 +2,7 @@
 
 > A calculator project built to understand the building blocks of React frontend framework.
 
-![Screenshot loading...]()
+![Screenshot loading...](public/screenshot.png)
 
 ## Built With
 
