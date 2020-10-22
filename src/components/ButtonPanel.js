@@ -1,40 +1,47 @@
 import React from 'react';
 import Button from './Button';
 
-function ButtonPanel() {
-  return (
-    <div>
-      <div className="group-one">
-        <Button name="AC" />
-        <Button name="+/-" />
-        <Button name="%" />
-        <Button name="÷" />
+class ButtonPanel extends React.Component {
+  renderButton(name, color = false, wide = false) {
+    this.buttonName = name;
+    return (<Button name={this.buttonName} color={color} wide={wide} />);
+  }
+
+  render() {
+    return (
+      <div>
+        <div className="group group-one">
+          {this.renderButton('AC')}
+          {this.renderButton('+/-')}
+          {this.renderButton('%')}
+          {this.renderButton('÷', true)}
+        </div>
+        <div className="group group-two">
+          {this.renderButton('7')}
+          {this.renderButton('8')}
+          {this.renderButton('9')}
+          {this.renderButton('X', true)}
+        </div>
+        <div className="group group-three">
+          {this.renderButton('4')}
+          {this.renderButton('5')}
+          {this.renderButton('6')}
+          {this.renderButton('-', true)}
+        </div>
+        <div className="group group-four">
+          {this.renderButton('1')}
+          {this.renderButton('2')}
+          {this.renderButton('3')}
+          {this.renderButton('+', true)}
+        </div>
+        <div className="group group-five">
+          {this.renderButton('0', false, true)}
+          {this.renderButton('.')}
+          {this.renderButton('=', true)}
+        </div>
       </div>
-      <div className="group-two">
-        <Button name="7" />
-        <Button name="8" />
-        <Button name="9" />
-        <Button name="X" />
-      </div>
-      <div className="group-three">
-        <Button name="4" />
-        <Button name="5" />
-        <Button name="6" />
-        <Button name="-" />
-      </div>
-      <div className="group-four">
-        <Button name="1" />
-        <Button name="2" />
-        <Button name="3" />
-        <Button name="+" />
-      </div>
-      <div className="group-five">
-        <Button name="0" />
-        <Button name="." />
-        <Button name="=" />
-      </div>
-    </div>
-  );
+    );
+  }
 }
 
 export default ButtonPanel;

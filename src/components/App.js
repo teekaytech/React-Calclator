@@ -5,9 +5,10 @@ import ButtonPanel from './ButtonPanel';
 function App() {
   return (
     <>
-      <h1>Hello World</h1>
-      <Display result="Result panel" />
-      <ButtonPanel />
+      <main className="main">
+        <Display result="0" />
+        <ButtonPanel />
+      </main>
     </>
   );
 }
