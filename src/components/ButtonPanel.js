@@ -2,42 +2,42 @@ import React from 'react';
 import Button from './Button';
 
 class ButtonPanel extends React.Component {
-  renderButton(name) {
+  renderButton(name, color = false, wide = false) {
     this.buttonName = name;
-    return <Button name={this.buttonName} />;
+    return (<Button name={this.buttonName} color={color} wide={wide} />);
   }
 
   render() {
     return (
       <div>
-        <div className="group-one">
+        <div className="group group-one">
           {this.renderButton('AC')}
           {this.renderButton('+/-')}
           {this.renderButton('%')}
-          {this.renderButton('÷')}
+          {this.renderButton('÷', true)}
         </div>
-        <div className="group-two">
+        <div className="group group-two">
           {this.renderButton('7')}
           {this.renderButton('8')}
           {this.renderButton('9')}
-          {this.renderButton('X')}
+          {this.renderButton('X', true)}
         </div>
-        <div className="group-three">
+        <div className="group group-three">
           {this.renderButton('4')}
           {this.renderButton('5')}
           {this.renderButton('6')}
-          {this.renderButton('-')}
+          {this.renderButton('-', true)}
         </div>
-        <div className="group-four">
+        <div className="group group-four">
           {this.renderButton('1')}
           {this.renderButton('2')}
           {this.renderButton('3')}
-          {this.renderButton('+')}
+          {this.renderButton('+', true)}
         </div>
-        <div className="group-five">
-          {this.renderButton('0')}
+        <div className="group group-five">
+          {this.renderButton('0', false, true)}
           {this.renderButton('.')}
-          {this.renderButton('=')}
+          {this.renderButton('=', true)}
         </div>
       </div>
     );

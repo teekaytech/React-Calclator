@@ -7,23 +7,47 @@ body {
   font-family: "Segoe UI", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #000316;
+}
+
+.main,
+display,
+group {
+  display: flex;
+}
+
+.display,
+.group {
+  height: 100px;
 }
 
 .main {
   margin: 0 auto;
   margin-top: 30px;
-  display: flex;
   flex-direction: column;
   width: 700px;
-  background-color: aqua;
 }
 
 .display {
-  display: flex;
-  justify-content: flex-end;
+  text-align: right;
   background-color: grey;
-  height: 100px;
   color: white;
   font-weight: bold;
   padding: 20px;
+  font-size: 65px;
+}
+
+.button {
+  width: 25%;
+  height: 100%;
+  font-size: 22px;
+  border: 1px solid rgb(216, 214, 214);
+}
+
+.doubleWidth {
+  width: 50%;
+}
+
+.orangeBackground {
+  background-color: #ff7f00;
 }

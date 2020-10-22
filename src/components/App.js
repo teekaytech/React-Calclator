@@ -6,7 +6,7 @@ function App() {
   return (
     <>
       <main className="main">
-        <Display result="Result panel" />
+        <Display result="0" />
         <ButtonPanel />
       </main>
     </>
