@@ -29,7 +29,7 @@ body {
 }
 
 .display {
-  text-align: right;
+  flex-direction: row-reverse;
   background-color: grey;
   color: white;
   font-weight: bold;
