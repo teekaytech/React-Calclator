@@ -1,23 +1,31 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Button = props => {
-  const {
-    name, btnClass, color, wide,
-  } = props;
-  return (
-    <button
-      type="button"
-      className={
-        btnClass
-        + (color ? ' orangeBackground' : '')
-        + (wide ? ' doubleWidth' : '')
-      }
-    >
-      {name}
-    </button>
-  );
-};
+class Button extends React.Component {
+  handleClick(buttonName) {
+    const { clickHandler } = this.props;
+    return clickHandler(buttonName);
+  }
+
+  render() {
+    const {
+      name, btnClass, color, wide,
+    } = this.props;
+    return (
+      <button
+        type="button"
+        className={
+          btnClass
+          + (color ? ' orangeBackground' : '')
+          + (wide ? ' doubleWidth' : '')
+        }
+        onClick={this.handleClick(name)}
+      >
+        {name}
+      </button>
+    );
+  }
+}
 
 Button.defaultProps = {
   name: '',
@@ -31,6 +39,7 @@ Button.propTypes = {
   btnClass: PropTypes.string,
   color: PropTypes.bool,
   wide: PropTypes.bool,
+  clickHandler: PropTypes.func.isRequired,
 };
 
 export default Button;

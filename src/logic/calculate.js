@@ -1,12 +1,16 @@
 import Operate from './operate';
 
 const calculate = (calculator, buttonName) => {
-  let { total, next } = calculator;
+  const { total, next } = calculator;
   const { operation } = calculator;
+  const calcResult = {};
   if (buttonName === '+/-') {
-    total *= -1;
-    next *= -1;
-    Operate(total, next, operation);
+    if (total) {
+      calcResult.total *= -1;
+    }
+    if (next) {
+      calcResult.next *= -1;
+    }
   }
 
   if (
@@ -16,10 +20,9 @@ const calculate = (calculator, buttonName) => {
     || buttonName === '%'
     || buttonName === '÷'
   ) {
-    total = Operate(total, next, operation);
+    return Operate(total, next, operation);
   }
-
-  return calculator;
+  return calcResult;
 };
 
 export default calculate;

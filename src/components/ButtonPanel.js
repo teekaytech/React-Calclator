@@ -1,10 +1,23 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 import Button from './Button';
 
 class ButtonPanel extends React.Component {
+  handleClick(buttonName) {
+    const { clickHandler } = this.props;
+    return clickHandler(buttonName);
+  }
+
   renderButton(name, color = false, wide = false) {
     this.buttonName = name;
-    return (<Button name={this.buttonName} color={color} wide={wide} />);
+    return (
+      <Button
+        name={this.buttonName}
+        color={color}
+        wide={wide}
+        clickHandler={this.handleClick(this.buttonName)}
+      />
+    );
   }
 
   render() {
@@ -43,5 +56,9 @@ class ButtonPanel extends React.Component {
     );
   }
 }
+
+ButtonPanel.propTypes = {
+  clickHandler: PropTypes.func.isRequired,
+};
 
 export default ButtonPanel;
