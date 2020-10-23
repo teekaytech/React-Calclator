@@ -15,6 +15,10 @@ const Operate = (numberOne, numberTwo, operation) => {
       result = n1.times(n2);
       break;
     case '÷':
+      if (numberTwo === '0') {
+        result = "Can't divide by 0";
+        break;
+      }
       result = n1.div(n2);
       break;
     default:
