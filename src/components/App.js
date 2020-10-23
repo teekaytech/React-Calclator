@@ -9,26 +9,28 @@ class App extends React.Component {
     this.state = {
       total: null,
       next: null,
-      // eslint-disable-next-line react/no-unused-state
       operation: null,
     };
+    this.handleClick = this.handleClick.bind(this);
   }
 
   handleClick = buttonName => {
     const stateObj = this.state;
     const output = calculate(stateObj, buttonName);
     this.setState({
-      total: output.total,
-      next: output.next,
+      total: output.total ? output.total : null,
+      next: output.next ? output.next : null,
+      operation: output.operation ? output.operation : null,
     });
   }
 
   render() {
-    const { total, next } = this.state;
+    // eslint-disable-next-line no-unused-vars
+    const { total, next, operation } = this.state;
     return (
       <>
         <main className="main">
-          <Display result={total || next} />
+          <Display result={next || total || '0'} />
           <ButtonPanel clickHandler={this.handleClick} />
         </main>
       </>

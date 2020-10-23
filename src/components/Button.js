@@ -1,44 +1,40 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-class Button extends React.Component {
-  handleClick(buttonName) {
-    const { clickHandler } = this.props;
-    return clickHandler(buttonName);
-  }
-
-  render() {
-    const {
-      name, btnClass, color, wide,
-    } = this.props;
-    return (
-      <button
-        type="button"
-        className={
-          btnClass
-          + (color ? ' orangeBackground' : '')
-          + (wide ? ' doubleWidth' : '')
-        }
-        onClick={this.handleClick(name)}
-      >
-        {name}
-      </button>
-    );
-  }
+function Button(props) {
+  const {
+    buttonName, btnClass, color, wide, clickHandler,
+  } = props;
+  return (
+    <button
+      type="button"
+      className={
+        btnClass
+        + (color ? ' orangeBackground' : '')
+        + (wide ? ' doubleWidth' : '')
+      }
+      onClick={clickHandler}
+    >
+      {buttonName}
+    </button>
+  );
 }
 
 Button.defaultProps = {
-  name: '',
+  buttonName: '',
   btnClass: 'button',
   color: false,
   wide: false,
 };
 
 Button.propTypes = {
-  name: PropTypes.string,
+  buttonName: PropTypes.string,
   btnClass: PropTypes.string,
   color: PropTypes.bool,
   wide: PropTypes.bool,
+};
+
+Button.propTypes = {
   clickHandler: PropTypes.func.isRequired,
 };
 
