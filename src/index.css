@@ -35,7 +35,15 @@ body {
   font-weight: bold;
   padding: 20px;
   font-size: 65px;
-  overflow-x: scroll;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.details {
+  position: absolute;
+  top: 20px;
+  left: 10px;
+  font-size: 20px;
 }
 
 .button {

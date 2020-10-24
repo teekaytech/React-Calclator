@@ -12,6 +12,7 @@ class App extends React.Component {
       operation: null,
     };
     this.handleClick = this.handleClick.bind(this);
+    this.handleDetails = this.handleDetails.bind(this);
   }
 
   handleClick = buttonName => {
@@ -24,12 +25,29 @@ class App extends React.Component {
     });
   }
 
+  handleDetails = (total, next, operation) => {
+    let details = '';
+    if (total !== null) {
+      details += ` ${total}`;
+    }
+    if (operation !== null) {
+      details += ` ${operation}`;
+    }
+    if (next !== null) {
+      details += ` ${next}`;
+    }
+    return details;
+  }
+
   render() {
-    const { total, next } = this.state;
+    const { total, next, operation } = this.state;
     return (
       <>
         <main className="main">
-          <Display result={next || total || '0000000000'} />
+          <Display
+            result={next || total || '0'}
+            details={this.handleDetails(total, next, operation)}
+          />
           <ButtonPanel clickHandler={this.handleClick} />
         </main>
       </>
