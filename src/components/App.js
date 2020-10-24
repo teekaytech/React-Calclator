@@ -25,12 +25,11 @@ class App extends React.Component {
   }
 
   render() {
-    // eslint-disable-next-line no-unused-vars
-    const { total, next, operation } = this.state;
+    const { total, next } = this.state;
     return (
       <>
         <main className="main">
-          <Display result={next || total || '0'} />
+          <Display result={next || total || '0000000000'} />
           <ButtonPanel clickHandler={this.handleClick} />
         </main>
       </>
